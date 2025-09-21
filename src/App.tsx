@@ -1,5 +1,5 @@
 import React from 'react';
-import { initWasm } from './utils/wasm-loader';
+import { initWasm } from './lib/wasm-loader';
 
 function App() {
 const [message, setMessage] = React.useState("Loading...");
