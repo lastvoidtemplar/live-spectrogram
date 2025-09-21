@@ -4,10 +4,11 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "./components/ui/resizable";
+import Recorder from "./components/recorder/recorder";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col text-gray-100 bg-gray-700">
       <Header />
       <main className="container mx-auto py-6 flex-1 flex flex-col justify-center">
         <ResizablePanelGroup
@@ -17,9 +18,7 @@ function App() {
           <ResizablePanel defaultSize={25}>
             <ResizablePanelGroup direction="vertical">
               <ResizablePanel defaultSize={25}>
-                <div className="flex h-full items-center justify-center">
-                  <span className="font-semibold">Mic</span>
-                </div>
+                <Recorder/>
               </ResizablePanel>
               <ResizableHandle />
               <ResizablePanel defaultSize={75}>
